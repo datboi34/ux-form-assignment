@@ -1,2 +1,97 @@
+/* mobile styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/*  Put your CSS Here */
+body {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  color: white;
+}
+img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+form {
+  width: 60%;
+  display: inline-block;
+  padding: 10px;
+}
+
+button {
+  color: white;
+  background-color: green;
+  padding: 8px;
+  margin: 20px;
+  border-radius: 20px;
+  width: 50%;
+}
+
+input {
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid #333;
+  padding: 0.5em;
+}
+
+select {
+  background: transparent;
+  color: rgb(105, 103, 104);
+}
+/* layout ex */
+.form-wrapper {
+  max-width: 450px;
+  width: 100%;
+}
+
+.form {
+  background-color: black;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* box shadow */
+
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+form h1 {
+  font-size: 1rem;
+} /* affects h1 element in form */
+
+/* block styles */
+
+/* desktop styles 550px */
+@media (min-width: 767px) {
+  /* base */
+  img {
+    width: 50%;
+    height: 100%;
+  }
+
+  button {
+    margin-top: 1rem;
+    width: 30%;
+  }
+
+  /* layout */
+  .form {
+    flex-direction: row;
+    width: 80%;
+  }
+  .form-wrapper {
+    max-width: 1000px;
+  }
+
+  /* blocl styles/ */
+}
